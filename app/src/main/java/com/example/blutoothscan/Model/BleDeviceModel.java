@@ -1,4 +1,4 @@
-package com.example.blutoothscan;
+package com.example.blutoothscan.Model;
 
 import android.bluetooth.BluetoothDevice;
 
@@ -18,5 +18,5 @@ public class BleDeviceModel {
     public int getRssi() {
         return rssi;
     }
-}
 
+}
