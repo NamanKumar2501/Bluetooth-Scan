@@ -23,13 +23,7 @@ public class MainActivity extends AppCompatActivity {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, fragment);
 
-        // Pass the title (tag) to the fragment using arguments
-        Bundle bundle = new Bundle();
-        bundle.putString("title", title);
-        fragment.setArguments(bundle);
 
-        transaction.addToBackStack(title); // Add transaction to back stack with the title
         transaction.commit();
     }
-
 }

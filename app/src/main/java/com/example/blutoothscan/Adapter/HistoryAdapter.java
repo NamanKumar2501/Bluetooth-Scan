@@ -56,12 +56,12 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
         // Random color
         setRandomBackgroundColor(holder);
 
-        holder.tvDelete.setOnClickListener(new View.OnClickListener() {
+      /*  holder.tvDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 deleteItemFromDatabase(context, bleItem);
             }
-        });
+        });*/
         calculateDistanceAsync(holder, rssi);
 
     }
